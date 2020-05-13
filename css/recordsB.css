@@ -1,0 +1,146 @@
+/*
+//账单记录手机端样式*/
+.main {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+.mobile{
+	position: relative;
+}
+.title {
+	color: #fff;
+	background: #C62427;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 5px 0px;
+}
+
+.line {
+	/*height:135px;*/
+	font-size: 0.85em;
+}
+
+.line .time {
+	background: #ddd;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 8px;
+}
+
+.line .info {
+	padding: 5px;
+	padding-top: 15px;
+}
+.mbottom{
+	border-top: 1px solid #ddd;
+	margin-top:10px;
+	padding-top:15px;
+	text-align: center;
+	height:80px;
+
+}
+.mbottom div{
+	padding:10px 15px;
+	border: 1px solid #ddd;
+	width:100px;
+}
+.lose {
+	color: green;
+}
+
+.normal {
+	color: #ce0101;
+}
+
+.userBox{
+	text-align: center;
+	padding:10px 0px 20px 0px;
+}
+.userBox div{
+	margin-top:6px;
+}
+.line2{
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+}
+.line2 div{
+	overflow: hidden;
+}
+.line2 .userlist{
+	padding:8px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	height: 1.75rem;
+	line-height:1.75rem;
+}
+.line2 .userlist a{
+	color: #666;
+	font-size: 14px;
+}
+
+
+.chongzhiBox{
+	padding:5px 15px;
+	font-size: 14px;
+}
+.chongzhiBox .chongzhileft{
+	display: inline-block;
+	width:100px;
+	text-align: center;
+}
+
+.chongzhiBox .chongzhiright{
+	display: inline-block;
+	width:280px;
+	height:140px;
+}
+.chongzhiBox .chongzhiright .chongqian{
+	display: inline-block;
+	width:100px;
+	padding:8px 12px;
+	text-align: center;
+	border: 1px solid #ccc;
+	margin:2px;
+	 border: 2px solid #eee;
+	 cursor: pointer;
+}
+.chongzhiBox .chongzhiright .chongqian:hover {
+    border: 2px solid #38b2ff;
+}
+
+.chongzhiBox .chongzhiright .active_click {
+    border: 2px solid #38b2ff;
+}
+.chongzhiBox .pay-money{
+	margin-top:15px;
+}
+.pay-money .pay-dou{
+	    color: #fff;
+	    background: #4998BE;
+	    padding: 8px 10px;
+	    margin-left: 10px;
+	    height: 40px;
+	    line-height: 40px;
+}
+.pay-way{
+	margin-top:15px;
+}
+
+
+.con_chongzhi {
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.con_chongzhi:hover {
+    background: #ff8518;
+}

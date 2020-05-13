@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--在线充值（第一版只做微信）-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>在线充值</title>
+		<link charset="utf-8" rel="stylesheet" href="css/records.css">
+		<!-- <link charset="utf-8" rel="stylesheet" href="css/recordsB.css"> -->
+		<link charset="utf-8" rel="stylesheet" href="css/common.css">
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="top_header nomobile">
+			<div class="fixed">
+				<div class="wrapper">
+					<div class="quick_link">
+						<ul>
+							<li class="cur color1_top"><a title="红蓝电竞"><i class="icon_1"></i>红蓝电竞</a></li>
+							<li class="color5_top"><a title="竞猜大全" target="_blank" href="index.html"><i class="icon_8"></i>预测大全</a>
+							</li>
+							<li class="color5_top"><a title="商城" target="_blank" href="products.html"><i class="icon_8"></i>商城</a></li>
+
+						</ul>
+					</div>
+					<div class="login_reg">
+						<div id="loginedwrap" class="logined" style="display: block;">
+							<a href="userCenter.html" class="userimg" rel="nofollow" target="_blank"><img src="img/5a3f6a412acb2.png" width="30"
+								 height="30" style="border-radius: 100%;"></a>
+							<a href="userCenter.html" class="username" rel="nofollow" target="_blank">流莽大哥</a>
+							<a href="login.html" style="float: right;color:#fff;">退出账号</a>
+
+						</div>
+					</div>
+					<!-- <div class="links_wrap"><a class="links_btn" href="/down/index.html"><span>APP下载</span><i></i></a> -->
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="main">
+			<!--    PC端-->
+			<div class="nomobile">
+				<div class="member_left">
+
+					<div class="member_menu">
+						<div class="member_item">
+							<div class="member_item_head">个人中心</div>
+							<div class="member_item_con">
+								<ul>
+									<li><a href="userCenter.html">我的红蓝</a></li>
+									<li><a href="jingcaiRecord.html">竞猜记录</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="member_item">
+							<div class="member_item_head member_acc">账户情况</div>
+							<div class="member_item_con">
+								<ul>
+									<li><a href="billRrecord.html">账单记录</a></li>
+									<li><a href="prizeRecord.html">奖品记录</a></li>
+									<li><a href="chongzhi.html">在线充值</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="member_item">
+							<div class="member_item_head member_in">个人信息</div>
+							<div class="member_item_con">
+								<ul>
+									<li><a href="userInfo.html">我的资料</a></li>
+									<li><a href="userInfo.html">修改密码</a></li>
+									<li><a href="userInfo.html">安全认证</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="member_right">
+					<!--投注记录-->
+					<div class="member_right_content5">
+						<div class="tou_head">
+							<font>在线充值</font>
+						</div>
+						<form action="#" method="post" id="zhifu_f" style="overflow: visible;">
+							<div class="tou_main">
+
+								<div class="chong">
+									<span>选择购买：</span>
+									<div class="sp active_click">
+										<div class="sp_info" value="起飞吧小火箭定制版道具"><img src="img/daoju1.jpg" width="120" height="120"></div>
+										<div class="sp_text" value="5">
+											<font>单价：￥5元</font><span>赠送：50000豆</span>
+										</div>
+									</div>
+
+									<div class="sp">
+										<div class="sp_info" value="大赞大母指定制版道具"><img src="img/daoju2.jpg" width="120" height="120"></div>
+										<div class="sp_text" value="10">
+											<font>单价：￥10元</font><span>赠送：100000豆</span>
+										</div>
+									</div>
+
+									<div class="sp">
+										<div class="sp_info" value="钢钻V字大爱钻石爱心道具定制版"><img src="img/daoju3.jpg" width="120" height="120"></div>
+										<div class="sp_text" value="50">
+											<font>单价：￥50元</font><span>赠送：500000豆</span>
+										</div>
+									</div>
+
+									<div class="sp">
+										<div class="sp_info" value="666大赞给力支持道具定制版"><img src="img/daoju4.jpg" width="120" height="120"></div>
+										<div class="sp_text" value="100">
+											<font>单价：￥100元</font><span>赠送：1000000豆</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="fenge">
+									<span>选择份额：</span>
+									<select>
+										<option value="1">1份</option>
+										<option value="2">2份</option>
+										<option value="3">3份</option>
+										<option value="4">4份</option>
+										<option value="5">5份</option>
+										<option value="6">6份</option>
+										<option value="7">7份</option>
+										<option value="8">8份</option>
+										<option value="9">9份</option>
+										<option value="10">10份</option>
+
+									</select>
+									<font>需要支付: <b>5</b> 元</font>
+									<div class="jifen_result"><span>您可以获得赠送<b>50000</b>豆</span></div>
+								</div>
+
+								<div class="zhifu">
+									<span>充值方式：</span>
+									<!--										<font class="font_active" value="支付宝"><img src="img/zhifubao.jpg" width="196" height="76"></font>-->
+
+									<font style="margin-left:50px;" value="微信"><a target="_blank" href="http://www.honglan.tv/news/107.html">
+											<img src="img/weifu.jpg" width="200" height="80"></a></font>
+
+								</div>
+
+								<input type="hidden" name="ordtotal_fee" value="5" class="input_money">
+								<input type="hidden" name="ordsubject" value="起飞吧小火箭定制版道具" class="input_ordsubject">
+								<input type="hidden" name="trade_no" value="873095413" class="input_trade_no">
+								<input type="hidden" name="id" value="15562">
+								<input type="submit" value="提交购买" class="con_chongzhi">
+
+							</div>
+						</form>
+					</div>
+
+
+				</div>
+
+			</div>
+			<!--    移动端-->
+			<div class="mobile">
+				<div class="title">充值中心
+					<a class="showMenu-m right" style="cursor: pointer;"><img src="img/order_icon.png" style="width:20px;height:20px;margin: 0px 8px;"></a>
+				</div>
+				<div class="user_box-m hide">
+					<div><a class="menu-m" href="index.html">主页</a></div>
+					<div><a class="menu-m" href="products.html">商城</a></div>
+					<div><a class="menu-m" class="menu-m" href="userInfo.html">个人设置</a></div>
+					<div><a class="menu-m" href="userCenter.html">我的</a></div>
+					<div><a class="menu-m" href="chongzhi.html">充值</a></div>
+
+				</div>
+				<form action="#" method="post" id="zhifu_f" style="overflow: visible;">
+					<div class="chongzhiBox">
+						<div>
+							<span class="chongzhileft">选择充值金额：</span>
+							<span class="chongzhiright">
+								<span class="chongqian active_click">充值5元</span>
+								<span class="chongqian">充值10元</span>
+								<span class="chongqian">充值30元</span>
+								<span class="chongqian">充值50元</span>
+								<span class="chongqian">充值100元</span>
+								<span class="chongqian">充值200元</span>
+							</span>
+						</div>
+
+						<div class="pay-money">
+							<span class="chongzhileft">支付金额：</span>
+							<span class="normal" style="font-weight: 600;font-size: 18px;">￥5</span><span>元</span>
+							<span class="pay-dou">
+								赠送<span style="color:#FEA213;">50000</span>红豆
+							</span>
+						</div>
+						<div class="pay-way">
+							<span class="chongzhileft">支付方式：</span>
+							<a target="_blank" href=""> <img src="img/weifu.jpg" width="100" height="60"></a>
+							<!-- <a target="_blank" href=""> <img src="img/weifu.jpg" width="100" height="60"></a> -->
+						</div>
+					</div>
+					<div style="width:100%;text-align: center;">
+						<input type="submit" value="提交购买" class="con_chongzhi">
+					</div>
+
+				</form>
+
+
+			</div>
+		</div>
+		<div class="bottom_foot nomobile">
+			<div class="wrapper">
+				<p class="bottom_nav">
+					<a title="">关于我们</a> <span>|</span>
+					<a title="">联系我们</a><span>|</span>
+					<a title="">用户注册</a> <span>|</span>
+					<a title="">忘记密码</a>
+					<span>|</span>
+					<a title="">服务协议</a> <span>|</span>
+					<a title="">竞猜规则</a><span>|</span>
+					<a title="">常见问题</a>
+				</p>
+				<p class="copyright">Copyright © 2015-2019 红蓝电竞. All rights reserved. <br><a href="http://www.miibeian.gov.cn/"
+					 target="_blank">粤ICP备16051838号</a>
+				</p>
+				<div class="safety">
+					<a><i class="icon_safe1"></i>中国互联网举报中心</a>
+					<a><i class="icon_safe2"></i>网络违法举报中心</a>
+					<a><i class="icon_safe3"></i>垃圾信息举报中心</a>
+				</div>
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(".nomobile").show();
+			$(".mobile").hide();
+			var browser = {
+				versions: function() {
+					var u = navigator.userAgent,
+						app = navigator.appVersion;
+					//移动设备浏览器版本信息
+					return {
+						//IE内核
+						trident: u.indexOf('Trident') > -1,
+						//opera内核
+						presto: u.indexOf('Presto') > -1,
+						//苹果、谷歌内核
+						webKit: u.indexOf('AppleWebKit') > -1,
+						//火狐内核
+						gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+						//是否为移动终端
+						mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+						//ios终端
+						ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+						//android终端或者uc浏览器
+						android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+						//是否为iPhone或者QQHD浏览器
+						iPhone: u.indexOf('iPhone') > -1,
+						//是否iPad
+						iPad: u.indexOf('iPad') > -1,
+						//是否web应该程序，没有头部与底部
+						webApp: u.indexOf('Safari') == -1
+					};
+				}(),
+				language: (navigator.browserLanguage || navigator.language).toLowerCase()
+			}
+
+			if (browser.versions.mobile || browser.versions.ios || browser.versions.android || browser.versions.iPhone ||
+				browser.versions.iPad) {
+				cssStyle();
+				cssChange();
+			} else {
+
+			}
+
+			function cssChange() {
+				var link = document.getElementsByTagName('link')[0];
+				link.setAttribute('href', 'css/recordsB.css');
+			}
+
+			function cssStyle() {
+				$(".nomobile").hide();
+				$(".mobile").show();
+				// $(".mobile").removeClass("hide").addClass("show");
+				// $(".nomobile").removeClass("show").addClass("hide");
+			}
+
+			$(".chong").on("click", ".sp", function() {
+				$(this).addClass("active_click").siblings().removeClass("active_click");
+			});
+			$(".chongzhiright").on("click", ".chongqian", function() {
+				$(this).addClass("active_click").siblings().removeClass("active_click");
+			});
+		</script>
+		<script type="text/javascript" src="js/common.js"></script>
+	</body>
+</html>

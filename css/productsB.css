@@ -1,0 +1,149 @@
+.mobile{
+	position: relative;
+}
+.title {
+	color: #fff;
+	background: #C62427;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 5px 0px;
+}
+.left_head {
+    width: 100%;
+    height: 40px;
+	line-height: 40px;
+    /*float: left;*/
+    border-bottom: 1px solid #0090ff;
+    background: #ffffff;
+	font-size: 14px;
+}
+
+.left_con {
+    width: 100%;
+    height: auto;
+}
+
+.pro {
+    width: 36%;
+    height: auto;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px #945e0c;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.pro:hover {
+    background: #fcc52a;
+}
+.pro img{
+    width: 80%;
+    height:82%;
+}
+.pro b {
+    display: block;
+    color: #4a4a4a;
+    /*line-height: 30px;*/
+    text-align: center;
+    font-size: 12px;
+    height:40px;
+}
+
+.pro span {
+    display: block;
+    /*float: left;*/
+    /*width: 180px;*/
+    /*height: 25px;*/
+    color: #0090ff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.pro font {
+    display: block;
+    /*float: left;*/
+    /*width: 180px;*/
+    /*height: 25px;*/
+    color: #ff0000;
+    line-height: 25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/*页码*/
+/*分页样式*/
+.fen {
+    float: right;
+    width: auto;
+    height: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.current {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    color: #000;
+    margin-right: 10px;
+    color: #f48533;
+}
+
+.num {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    color: #000;
+    margin-right: 10px;
+}
+
+.num:hover {
+    color: #f48533;
+}
+
+.next {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    color: #000;
+    margin-right: 10px;
+}
+
+.next:hover {
+    color: #f48533;
+}
+
+.prev {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    color: #000;
+    margin-right: 10px;
+}
+
+.prev:hover {
+    color: #f48533;
+}

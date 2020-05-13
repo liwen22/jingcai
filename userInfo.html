@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!--用户中心用户信息-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>用户信息</title>
+		<link charset="utf-8" rel="stylesheet" href="css/records.css">
+		<!-- <link charset="utf-8" rel="stylesheet" href="css/userInfo.css"> -->
+		<link charset="utf-8" rel="stylesheet" href="css/common.css">
+		<script src="js/jquery.js"></script>
+		<style>
+			a{
+	            text-decoration-line: none;
+	        }
+			
+	        .file {
+			
+	               position: relative;
+	               display: inline-block;
+	               /* background: #D0EEFF; */
+	               background: red;
+	               border: 1px solid red;
+	               /* border-radius: 2px; */
+	               padding: 0px 12px;
+	               color: #1E88C7;
+	               text-decoration: none;
+	               text-indent: 0;
+	               height: 30px;
+	               line-height: 31px;
+	               left: -6px;
+				   text-decoration: none;
+				   color:#fff;
+				   font-size:12px;
+	        }
+	        .file input {
+	            position: absolute;
+	            font-size: 100px;
+	            right: 0;
+	            top: 0;
+	            opacity: 0;
+	        }
+	        .file:hover {
+	            background: red;
+	            border-color: red;
+	            color: #fff;
+	            text-decoration: none;
+	        }
+	input[id="avatval"]{
+		padding:3px 6px;
+		padding-left:10px;
+		border:1px solid #E7EAEC;
+		height:25px;
+		line-height:25px;
+		/* border-left:3px solid #3FB7EB; */
+		border-left:3px solid red;
+		background:#FAFAFB;
+		border-radius:2px;
+			width:20%;
+		}
+	
+	    </style>
+	</head>
+	<body>
+		<div class="top_header nomobile">
+			<div class="fixed">
+				<div class="wrapper">
+					<div class="quick_link">
+						<ul>
+							<li class="cur color1_top"><a title="红蓝电竞"><i class="icon_1"></i>红蓝电竞</a>
+							</li>
+							<li class="color5_top"><a title="竞猜大全" target="_blank" href="index.html"><i class="icon_8"></i>预测大全</a>
+							</li>
+							<li class="color5_top"><a title="商城" target="_blank" href="products.html"><i class="icon_8"></i>商城</a></li>
+						</ul>
+					</div>
+					<div class="login_reg">
+						<div id="loginedwrap" class="logined" style="display: block;">
+							<a href="userCenter.html" class="userimg" rel="nofollow" target="_blank"><img src="img/5a3f6a412acb2.png" width="30"
+								 height="30" style="border-radius: 100%;"></a>
+							<a href="userCenter.html" class="username" rel="nofollow" target="_blank">流莽大哥</a>
+							<a href="login.html" style="float: right;color:#fff;">退出账号</a>
+
+						</div>
+					</div>
+					<!-- <div class="links_wrap"><a class="links_btn" href="/down/index.html"><span>APP下载</span><i></i></a> -->
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="main">
+			<!--    PC端-->
+			<div class="nomobile member_left">
+				<div class="member_menu">
+					<div class="member_item">
+						<div class="member_item_head">个人中心</div>
+						<div class="member_item_con">
+							<ul>
+								<li><a href="userCenter.html">我的红蓝</a></li>
+								<li><a href="jingcaiRecord.html">竞猜记录</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="member_item">
+						<div class="member_item_head member_acc">账户情况</div>
+						<div class="member_item_con">
+							<ul>
+								<li><a href="billRrecord.html">账单记录</a></li>
+								<li><a href="prizeRecord.html">奖品记录</a></li>
+								<li><a href="chongzhi.html">在线充值</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="member_item">
+						<div class="member_item_head member_in">个人信息</div>
+						<div class="member_item_con">
+							<ul>
+								<li><a href="userInfo.html">我的资料</a></li>
+								<li><a href="userInfo.html">修改密码</a></li>
+								<li><a href="userInfo.html">安全认证</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="mobile">
+				<div class="title">个人设置
+					<a class="showMenu-m right" style="cursor: pointer;"><img src="img/order_icon.png" style="width:20px;height:20px;margin: 0px 8px;"></a>
+				</div>
+				<div class="user_box-m hide">
+					<div><a class="menu-m" href="index.html">主页</a></div>
+					<div><a class="menu-m" href="products.html">商城</a></div>
+					<div><a class="menu-m" class="menu-m" href="userInfo.html">个人设置</a></div>
+					<div><a class="menu-m" href="userCenter.html">我的</a></div>
+					<div><a class="menu-m" href="chongzhi.html">充值</a></div>
+
+				</div>
+			</div>
+			<div class=" member_right">
+				<div class="member_right_head">
+					<ul class="tabList">
+						<li><a href="#" id="m_u_1" class="active">我的资料</a></li>
+						<li><a href="#" id="m_u_2" class="">个人说明</a></li>
+						<li><a href="#" id="m_u_3" class="">修改密码</a></li>
+						<li class="nomobile"><a href="#" id="m_u_4" class="">安全认证</a></li>
+					</ul>
+				</div>
+
+				<form action="#" method="post" enctype="multipart/form-data" id="upload_images">
+					<div class="member_right_content1">
+						<ul>
+							<li><span>昵称：</span>
+								<font>流莽大哥</font>
+							</li>
+							<li><span>手机：</span>
+								<font>13939722275</font>
+							</li>
+							<li><span>头像：</span>
+								<img src="img/touxiang.jpg" width="160" height="160" class="big_images">
+							</li>
+							<li>
+								<span>上传新头像：</span>
+                       <!-- <input type="file" name="images" id="logo_images">
+                        <div style='margin: 10px 0px 0px 15px;'>
+                            <input type="button" onclick="check_images();" value="点击更新" style="cursor:pointer;">
+                        </div> -->
+								<div style="width:50%">
+									<input type="text" readonly id="avatval" class="showFileName">
+									<a href="javascript:;" class="file">上传
+										<input type="file" id="propagateUrl" onchange="uploadImg(this)">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</form>
+				<!--修改昵称-->
+				<form action="#" method="post">
+					<!--        <form action="/member/change_desc.html" method="post">-->
+					<div class="member_right_content2">
+						<ul>
+							<li style=" height:120px; resize:none;"><span>个人说明：</span>
+								<font><textarea type="text" value="" name="desc" style="height:120px; resize:none;"></textarea></font>
+							</li>
+						</ul>
+						<input type="submit" class="change_info" value="点击修改" style="border:none; cursor:pointer;">
+						<div class="name_rule">
+							<div class="name_rule_head">规则说明：</div>
+							<div class="name_rule_content">
+								1-不得包含敏感词或语句<br>
+								2-不得分布任何形式的广告<br>
+							</div>
+						</div>
+					</div>
+				</form>
+				<!--修改密码-->
+				<form action="#" method="post">
+					<div class="member_right_content3">
+						<ul>
+							<li><span>原密码：</span>
+								<font><input type="password" name="pass1"></font>
+							</li>
+							<li><span>新密码：</span>
+								<font><input type="password" name="pass2"></font>
+							</li>
+							<li><span>确认密码：</span>
+								<font><input type="password" name="pass3"></font>
+							</li>
+						</ul>
+						<input type="submit" class="change_info" value="点击修改" style="border:none; cursor:pointer;">
+					</div>
+				</form>
+				<!--安全绑定-->
+				<div class="nomobile member_right_content4">
+					<div class="name_rule">
+						<div class="name_rule_head">手机绑定<a href="#">[您已绑定手机]</a><!-- <a href="#" id="phone_show">[点击绑定]</a> -->
+						</div>
+						<div class="name_rule_content">
+							1-绑定手机有助于提升您的账号安全，您可以在丢失账号后通过绑定的手机找回;<br>
+							2-一个账号只能绑定一个手机号码;<br>
+							3-请勿随意泄露您的手机号码，以防不法分子利用;
+						</div>
+					</div>
+
+					<div class="phone">
+						<div class="phone_head">绑定手机<a href="#" id="phone_close">[点击关闭]</a></div>
+						<ul>
+							<li><span>所属国家/地区：</span>
+								<font><select>
+										<option>中国大陆</option>
+									</select></font>
+							</li>
+							<li><span>手机号码：</span>
+								<font><input type="text" value=""></font>
+							</li>
+							<li><span></span><a href="#">发送验证码</a></li>
+							<li><span>验证码：</span>
+								<font><input type="text" value=""></font>
+							</li>
+							<li><span>校验码：</span>
+								<font><input type="text" value=""></font>
+							</li>
+						</ul>
+						<a href="#" class="change_info">确定绑定</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="bottom_foot nomobile">
+			<div class="wrapper">
+				<p class="bottom_nav">
+					<a title="">关于我们</a> <span>|</span>
+					<a title="">联系我们</a><span>|</span>
+					<a title="">用户注册</a> <span>|</span>
+					<a title="">忘记密码</a>
+					<span>|</span>
+					<a title="">服务协议</a> <span>|</span>
+					<a title="">竞猜规则</a><span>|</span>
+					<a title="">常见问题</a>
+				</p>
+				<p class="copyright">Copyright © 2015-2019 红蓝电竞. All rights reserved. <br><a href="http://www.miibeian.gov.cn/"
+					 target="_blank">粤ICP备16051838号</a>
+				</p>
+				<div class="safety">
+					<a><i class="icon_safe1"></i>中国互联网举报中心</a>
+					<a><i class="icon_safe2"></i>网络违法举报中心</a>
+					<a><i class="icon_safe3"></i>垃圾信息举报中心</a>
+				</div>
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(".mobile").hide();
+			$(".nomobile").show();
+			var browser = {
+				versions: function() {
+					var u = navigator.userAgent,
+						app = navigator.appVersion;
+					//移动设备浏览器版本信息
+					return {
+						//IE内核
+						trident: u.indexOf('Trident') > -1,
+						//opera内核
+						presto: u.indexOf('Presto') > -1,
+						//苹果、谷歌内核
+						webKit: u.indexOf('AppleWebKit') > -1,
+						//火狐内核
+						gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+						//是否为移动终端
+						mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+						//ios终端
+						ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+						//android终端或者uc浏览器
+						android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+						//是否为iPhone或者QQHD浏览器
+						iPhone: u.indexOf('iPhone') > -1,
+						//是否iPad
+						iPad: u.indexOf('iPad') > -1,
+						//是否web应该程序，没有头部与底部
+						webApp: u.indexOf('Safari') == -1
+					};
+				}(),
+				language: (navigator.browserLanguage || navigator.language).toLowerCase()
+			}
+
+			if (browser.versions.mobile || browser.versions.ios || browser.versions.android || browser.versions.iPhone ||
+				browser.versions.iPad) {
+				cssStyle();
+				cssChange();
+			}
+
+			function cssChange() {
+				var link = document.getElementsByTagName('link')[0];
+				link.setAttribute('href', 'css/userInfo.css');
+			}
+
+			function cssStyle() {
+				$(".nomobile").hide();
+				$(".mobile").show();
+			}
+		</script>
+
+		<script src="js/common.js"></script>
+		<script src="js/userInfo.js"></script>
+	</body>
+</html>

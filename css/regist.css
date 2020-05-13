@@ -1,0 +1,87 @@
+@charset "utf-8";
+a img {
+  border: 0;
+  vertical-align: middle;
+}
+.small {
+  font-size: 0.875em;
+}
+/* CSS Document */
+body {
+  font-family: Microsoft Yahei;
+  font: 16px/1.5 tahoma, microsoft yahei, simsun, sans-serif;
+  color: #adadad;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.main {
+  min-height: 500px;
+  margin-bottom: 30px;
+}
+.main .content {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.reg-container {
+  width: 500px;
+}
+@media screen and (max-width: 768px) {
+  .reg-container {
+    width: 85%;
+  }
+}
+.form {
+  padding-top: 50px;
+}
+.form img {
+  width: 96px;
+  height: 42px;
+}
+.form input {
+  line-height: normal;
+  background: #1c1e21;
+  border: none;
+  color: #adadad;
+}
+.lr_head {
+  height: 43px;
+  background: #273a57;
+  margin: 0 auto;
+}
+.lr_head a {
+  display: block;
+  float: left;
+  width: 228px;
+  width: 50%;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  font-size: 16px;
+  color: #dbdbdb;
+  font-weight: bold;
+}
+.lr_head .lr_head_active {
+  background: #5994ec;
+}
+.footer {
+  min-height: 80px;
+}
+.footer #footer-info {
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+.footer #footer-info .copyright {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=regist.css.map */
